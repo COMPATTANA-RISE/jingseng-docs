@@ -24,7 +24,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8 # หรือ 9 ถ้าใช้เวอร์ชันล่าสุด
+          version: 9 # หรือ 9 ก็ได้ ถ้าใช้เวอร์ชันใหม่
 
       - name: Install dependencies
         run: pnpm install
