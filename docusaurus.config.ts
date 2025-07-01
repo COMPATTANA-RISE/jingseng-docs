@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://docs.jingseng-autowork.com",
+  url: "https://COMPATTANA-RISE.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/jingseng-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -32,8 +32,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "th",
-    locales: ["th"],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
@@ -44,8 +44,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/COMPATTANA-RISE/jingseng-docs/edit/main",
         },
         blog: {
           showReadingTime: true,
@@ -55,8 +54,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/COMPATTANA-RISE/jingseng-docs/edit/main",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -85,7 +83,6 @@ const config: Config = {
           position: "left",
           label: "เอกสารโปรเจ็ค",
         },
-        { to: "/technique", label: "เอกสารทางเทคนิค", position: "left" },
         {
           href: "https://github.com/COMPATTANA-RISE/jingseng-docs",
           label: "GitHub",

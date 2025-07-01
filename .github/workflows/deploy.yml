@@ -1,0 +1,39 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # หรือเปลี่ยนเป็น branch ที่ใช้จริง
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # จำเป็นสำหรับการ deploy แบบ full history
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install PNPM
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Docusaurus
+        run: pnpm build
+
+      - name: Deploy to GitHub Pages
+        env:
+          GIT_USER: github-actions[bot]
+          USE_SSH: false
+        run: |
+          pnpm run deploy
