@@ -33,7 +33,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy to GitHub Pages
-        env:
-          GIT_USER: github-actions[bot]
-          USE_SSH: false
-        run: pnpm run deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
