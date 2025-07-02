@@ -40,6 +40,10 @@
 
 ## Custom Status Code
 
+### No Exceptions
+
+- **0** - การดำเนินการราบรื่น ไม่มีข้อผิดพลาดใดๆ
+
 ### Authentication & Authorization (1000-1999)
 
 - **1001** - Token ไม่ถูกต้องหรือหมดอายุ
