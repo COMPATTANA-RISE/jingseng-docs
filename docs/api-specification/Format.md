@@ -45,7 +45,7 @@
 ```json
 {
   "status": "success",
-  "statusCode": 0,
+  "statusCode": 200,
   "message": "Users fetched successfully",
   "data": [
     {
