@@ -13,16 +13,16 @@
 
 ```json
 {
-  "username": "dev",
-  "email": "test@test.com",
-  "password": "password",
+  "username": "<username>",
+  "email": "<email>",
+  "password": "<password>",
   "isActive": true,
   "userDetail": {
-    "firstname": "อภิชาติ",
-    "lastname": "คำจีนสี",
-    "phone": "090000000",
-    "address": "Thailand",
-    "birthdate": "1990-09-30"
+    "firstname": "<firstname>",
+    "lastname": "<lastname>",
+    "phone": "<phone>",
+    "address": "<address>",
+    "birthdate": "<birthdate>"
   }
 }
 ```
