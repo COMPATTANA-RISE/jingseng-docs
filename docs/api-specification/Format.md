@@ -33,7 +33,7 @@
 
 โครงสร้างการส่งข้อมูลกลับจาก Backend -> Frontend
 
-- `status` ประเภท `string` : สถานะของการตอบกลับ `success | error`
+- `success` ประเภท `boolean` : สถานะของการตอบกลับ `true | false`
 - `statusCode` ประเภท `number` : สถานะของการตอบกลับ ดูในเอกสาร `การจัดการข้อผิดพลาด`
 - `message` ประเภท `string` : ข้อความตอบกลับจาก Backend
 - `data` ประเภท `Object | Array` : ข้อมูลที่ส่งให้ Frontend
@@ -44,7 +44,7 @@
 
 ```json
 {
-  "status": "success",
+  "success": true,
   "statusCode": 200,
   "message": "Users fetched successfully",
   "data": [
